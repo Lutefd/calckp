@@ -1,24 +1,37 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Calculadora da Independencia Financeira</h1>
+      <h2>Você pode se aposentar com </h2>
+      <div>Quantidade de dinheiro necessária para aposentadoria: </div>
+      <form>
+        <label>
+          Com qual salario deseja se aposentar?
+          <input type="number" />
+        </label>
+        <br />
+        <label>
+          Idade atual
+          <input type="number" />
+        </label>
+        <br />
+        <label>
+          Patrimonio atual
+          <input type="number" />
+        </label>
+        <br />
+        <label>
+          Aporte mensais
+          <input type="number" />
+        </label>
+        <div>
+          <h2>Ajustes das taxas de retorno para dev test</h2>
+          <label>Taxa de retorno</label>
+        </div>
+      </form>
     </div>
   );
 }
